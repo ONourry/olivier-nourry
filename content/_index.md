@@ -36,6 +36,7 @@ sections:
   - block: Publications
     content:
       title: Publications
+      username: admin
       text: ""
       filters:
         folders:
