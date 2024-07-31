@@ -37,7 +37,7 @@ education:
   - area: Doctor of Philosophy, Software Engineering
     institution: Kyushu University, Japan
     date_start: 2022-04-01
-    date_end: 2024-09-31
+    date_end:
     summary: |
       Thesis on a multifaceted analysis of software quality in open-source software projects.
     button:
@@ -46,7 +46,7 @@ education:
   - area: Master of Science, Software Engineering
     institution: Kyushu University, Japan
     date_start: 2020-04-01
-    date_end: 2022-03-31
+    date_end: 
   - area: Bachelor of Engineering, Software Engineering
     institution: Concordia University, Canada
     date_start: 2015-09-03
@@ -68,7 +68,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2018-05-01
-    date_end: 2018-09-30
+    date_end: 
     summary: |
       Responsibilities include:
       - Collect software requirements from clients
@@ -79,7 +79,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2017-05-01
-    date_end: 2017-11-30
+    date_end: 
     summary: |
       Responsibilities include:
       - Set up data pipelines to feed data to a super computer for weather predictions
