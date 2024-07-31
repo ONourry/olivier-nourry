@@ -1,5 +1,5 @@
 ---
-title: 'Olivier Nourry'
+title: ''
 date: 2023-10-24
 type: landing
 
@@ -33,16 +33,21 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
-  - block: Publications
+  - block: collection
+    id: publications
     content:
       title: Publications
-      username: admin
-      text: ""
+      subtitle: Refereed
+      text: |-
+        {{% callout note %}}
+        Quickly discover relevant content by [filtering publications](./publication/).
+        {{% /callout %}}
       filters:
         folders:
           - publication
         exclude_featured: false
     design:
+      columns: '2'
       view: citation
   #     username: admin
   # - block: awards
