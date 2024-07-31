@@ -46,7 +46,7 @@ education:
   - area: Master of Science, Software Engineering
     institution: Kyushu University, Japan
     date_start: 2020-04-01
-    date_end: 
+    date_end: 2022-03-01
   - area: Bachelor of Engineering, Software Engineering
     institution: Concordia University, Canada
     date_start: 2015-09-03
@@ -68,7 +68,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2018-05-01
-    date_end: 
+    date_end: 2018-09-01
     summary: |
       Responsibilities include:
       - Collect software requirements from clients
@@ -79,7 +79,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2017-05-01
-    date_end: 
+    date_end: 2017-11-01
     summary: |
       Responsibilities include:
       - Set up data pipelines to feed data to a super computer for weather predictions
