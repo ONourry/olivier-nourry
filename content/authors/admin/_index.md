@@ -41,8 +41,8 @@ education:
     summary: |
       Thesis on a multifaceted analysis of software quality in open-source software projects.
     button:
-      text: 'NA'
-      url: 'NA'
+      text: 'Thesis not yet available'
+      url: 'Thesis not yet available'
   - area: Master of Science, Software Engineering
     institution: Kyushu University, Japan
     date_start: 2020-04-01
