@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: 'Olivier Nourry'
 date: 2023-10-24
 type: landing
 
@@ -33,9 +33,16 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
-  # - block: skills
-  #   content:
-  #     title: Skills & Hobbies
+  - block: Publications
+    content:
+      title: Publications
+      text: ""
+      filters:
+        folders:
+          - publication
+        exclude_featured: false
+    design:
+      view: citation
   #     username: admin
   # - block: awards
   #   content:
