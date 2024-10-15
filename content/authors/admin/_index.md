@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Ph.D Student
+role: Specially Appointed Assistant Professor
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -85,4 +85,4 @@ work:
       - Set up data pipelines to feed data to a super computer for weather predictions
 ---
 
-I am currently a third year PH.D student at Kyushu University in Japan.
+I am currently a specially appointed Assistant professor student at Kyushu University in Japan.
