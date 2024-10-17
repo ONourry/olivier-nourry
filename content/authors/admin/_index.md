@@ -39,10 +39,7 @@ education:
     date_start: 2022-04-01
     date_end:
     summary: |
-      Thesis on a multifaceted analysis of software quality in open-source software projects.
-    button:
-      text: 'Thesis not yet available'
-      url: 'Thesis not yet available'
+      Thesis: A study of software quality maintenance in open-source software projects.
   - area: Master of Science, Software Engineering
     institution: Kyushu University, Japan
     date_start: 2020-04-01
@@ -61,8 +58,8 @@ work:
     summary: |2-
       Responsibilities include:
       - Setup data mining pipelines
-      - Clean and feed data to for Model training
-      - Design, develop, deploy, and maintain ML model to automate the classification, clustering, and triaging of Siri bugs and test failures
+      - Clean and feed data for model training
+      - Design, develop, deploy, and maintain ML models to automate the classification, clustering, and triaging of Siri bugs and test failures
   - position: Cognitive automation developer
     company_name: Societe Generale Corporate and Investment Banking
     company_url: ''
@@ -85,4 +82,4 @@ work:
       - Set up data pipelines to feed data to a super computer for weather predictions
 ---
 
-I am currently a specially appointed Assistant professor student at Kyushu University in Japan.
+I am currently a specially appointed Assistant professor at Kyushu University in Japan.
