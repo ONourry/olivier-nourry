@@ -17,18 +17,18 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Specially Appointed Assistant Professor
+role: Assistant Professor
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Principles of Software engineering and programming Languages
-    url: https://posl.ait.kyushu-u.ac.jp/ja/
+  - name: Software Engineering Laboratory
+    url: https://sel.ist.osaka-u.ac.jp/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:oliviern[at]posl[dot]kyushu-u[dot]ac[dot]jp'
+    url: 'mailto:nourry[at]ist[dot]osaka-u[dot]ac[dot]jp'
     label: E-mail Me
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/olivier-nourry-603687113/
@@ -37,7 +37,7 @@ education:
   - area: Doctor of Philosophy, Software Engineering
     institution: Kyushu University, Japan
     date_start: 2022-04-01
-    date_end:
+    date_end: 2024-09-31
     summary: |
       Thesis: A study of software quality maintenance in open-source software projects.
   - area: Master of Science, Software Engineering
@@ -49,6 +49,20 @@ education:
     date_start: 2015-09-03
     date_end: 2019-05-17
 work:
+   - position: Assistant Professor
+    company_name: Osaka University
+    company_url: ''
+    company_logo: ''
+    date_start: 2025-04-01
+    date_end: 
+    summary: 
+  - position: Specially Appointed Assistant Professor
+    company_name: Kyushu University
+    company_url: ''
+    company_logo: ''
+    date_start: 2024-10-01
+    date_end: 2025-03-31
+    summary: 
   - position: Software Quality Engineer
     company_name: Apple Japan, Inc.
     company_url: ''
@@ -82,4 +96,4 @@ work:
       - Set up data pipelines to feed data to a super computer for weather predictions
 ---
 
-I am currently a specially appointed Assistant professor at Kyushu University in Japan.
+I am currently an Assistant professor at Osaka University in Japan.
