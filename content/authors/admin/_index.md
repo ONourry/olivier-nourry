@@ -49,7 +49,7 @@ education:
     date_start: 2015-09-03
     date_end: 2019-05-17
 work:
-   - position: Assistant Professor
+  - position: Assistant Professor
     company_name: Osaka University
     company_url: ''
     company_logo: ''
