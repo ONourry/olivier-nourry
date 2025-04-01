@@ -37,7 +37,7 @@ education:
   - area: Doctor of Philosophy, Software Engineering
     institution: Kyushu University, Japan
     date_start: 2022-04-01
-    date_end: 2024-09-31
+    date_end: 2024-09-30
     summary: |
       Thesis: A study of software quality maintenance in open-source software projects.
   - area: Master of Science, Software Engineering
