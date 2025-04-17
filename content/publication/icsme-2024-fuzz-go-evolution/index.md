@@ -12,5 +12,5 @@ publishDate: '2024-07-31T07:44:35.467904Z'
 publication_types:
 - article-journal
 publication: '*40th International Conference on Software Maintenance and Evolution
-  (ICSME 2024)*'
+  (ICSME)*'
 ---

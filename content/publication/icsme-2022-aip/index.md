@@ -13,5 +13,5 @@ publishDate: '2024-07-31T10:43:24.513359Z'
 publication_types:
 - paper-conference
 publication: '*38th International Conference on Software Maintenance and Evolution
-  (ICSME 2022)*'
+  (ICSME)*'
 ---
