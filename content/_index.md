@@ -49,6 +49,7 @@ sections:
         exclude_featured: false
       sort_by: 'Date'
       sort_ascending: false
+      overwrite: true
     design:
       columns: '2'
       view: citation
