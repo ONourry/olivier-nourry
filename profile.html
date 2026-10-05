@@ -1,0 +1,28 @@
+---
+layout: default
+title: Profile
+permalink: /profile/
+description: Career, education, grants and talks of Olivier Nourry.
+---
+{% assign cv = site.data.cv %}
+<h1>Profile</h1>
+
+<h2>Positions</h2>
+<dl class="career">
+  {% for x in cv.positions %}<dt>{{ x.period }}</dt><dd>{{ x.role }}, {{ x.org }}</dd>{% endfor %}
+</dl>
+
+<h2>Education</h2>
+<dl class="career">
+  {% for x in cv.education %}<dt>{{ x.period }}</dt><dd>{{ x.degree }}, {{ x.org }}</dd>{% endfor %}
+</dl>
+
+<h2>Research Grants</h2>
+<dl class="career">
+  {% for g in cv.grants %}<dt>{{ g.period }}</dt><dd><strong>{{ g.title }}</strong><br><span class="muted">{{ g.funder }} · {{ g.role }}</span></dd>{% endfor %}
+</dl>
+
+<h2>Talks</h2>
+<dl class="career">
+  {% for t in site.data.talks %}<dt>{{ t.year }}</dt><dd>“{{ t.title }}”<br><span class="muted">{{ t.event }}</span></dd>{% endfor %}
+</dl>

@@ -1,0 +1,129 @@
+# Publications, newest first within each type.
+#
+# To add a paper, copy an entry and edit it. Fields:
+#   type:     journal | conference | workshop | preprint | domestic   (controls grouping, tint and filter chips)
+#   title, authors (list, "First Last"), venue (full name), venue_short (e.g. "ICSME 2024"), year
+#   details:  optional volume/pages string
+#   note:     optional short tag shown after the venue (e.g. "ERA track", "Journal-First at FSE 2025")
+#   award:    optional award name (shows a trophy line)
+#   doi, arxiv, pdf, slides, code, url: optional links (pdf/slides may be paths under files/)
+#   authors_short: optional abbreviated author line for very long author lists
+#   key:      optional BibTeX key / anchor (default: firstauthorYEARword)
+
+- type: journal
+  title: "Large-Scale Empirical Analysis of Continuous Fuzzing: Insights From 1 Million Fuzzing Sessions"
+  authors: [Tatsuya Shirai, Olivier Nourry, Yutaro Kashiwa, Kenji Fujiwara, Yasutaka Kamei, Hajimu Iida]
+  venue: IEEE Transactions on Software Engineering
+  venue_short: TSE
+  year: 2026
+  doi: 10.1109/TSE.2026.3683879
+  arxiv: "2510.16433"
+
+- type: journal
+  title: "Abandonment and Resilience: Understanding Core Developer Turnover in Open Source Software"
+  authors: [Olivier Nourry, Masanari Kondo, Shinobu Saito, Yukako Iimura, Naoyasu Ubayashi, Yasutaka Kamei]
+  venue: IEICE Transactions on Information and Systems
+  venue_short: IEICE Trans. Inf. & Syst.
+  year: 2025
+  details: "vol. E108-D, no. 11"
+  doi: 10.1587/transinf.2025EDL8005
+  arxiv: "2412.00313"
+
+- type: journal
+  title: "My Fuzzers Won't Build: An Empirical Study of Fuzzing Build Failures"
+  authors: [Olivier Nourry, Yutaro Kashiwa, Weiyi Shang, Honglin Shu, Yasutaka Kamei]
+  venue: ACM Transactions on Software Engineering and Methodology
+  venue_short: TOSEM
+  year: 2025
+  note: Presented at FSE 2025 (Journal-First)
+  doi: 10.1145/3688842
+
+- type: journal
+  title: "The Human Side of Fuzzing: Challenges Faced by Developers during Fuzzing Activities"
+  authors: [Olivier Nourry, Yutaro Kashiwa, Bin Lin, Gabriele Bavota, Michele Lanza, Yasutaka Kamei]
+  venue: ACM Transactions on Software Engineering and Methodology
+  venue_short: TOSEM
+  year: 2024
+  note: Presented at FSE 2024 (Journal-First)
+  doi: 10.1145/3611668
+
+- type: journal
+  title: "Does Shortening the Release Cycle Affect Refactoring Activities: A Case Study of the JDT Core, Platform SWT, and UI Projects"
+  authors: [Olivier Nourry, Yutaro Kashiwa, Yasutaka Kamei, Naoyasu Ubayashi]
+  venue: Information and Software Technology
+  venue_short: IST
+  year: 2021
+  details: "vol. 139, 106623"
+  doi: 10.1016/j.infsof.2021.106623
+
+- type: conference
+  title: "Does Programming Language Matter? An Empirical Study of Fuzzing Bug Detection"
+  authors: [Tatsuya Shirai, Olivier Nourry, Yutaro Kashiwa, Kenji Fujiwara, Hajimu Iida]
+  venue: IEEE/ACM International Conference on Mining Software Repositories
+  venue_short: MSR 2026
+  year: 2026
+  doi: 10.1145/3793302.3793358
+  arxiv: "2602.05312"
+
+- type: conference
+  title: "Leveraging Mutation Analysis for LLM-based Repair of Quantum Programs"
+  authors: [Chihiro Yoshida, Yuta Ishimoto, Olivier Nourry, Masanari Kondo, Makoto Matsushita, Yasutaka Kamei, Yoshiki Higo]
+  venue: IEEE International Conference on Software Analysis, Evolution and Reengineering
+  venue_short: SANER 2026
+  year: 2026
+  note: ERA track
+  doi: 10.1109/SANER67736.2026.00019
+  arxiv: "2601.12273"
+
+- type: conference
+  title: "Exploring the Adoption of Fuzz Testing in Open-Source Software: A Case Study of the Go Community"
+  authors: [Olivier Nourry, Masanari Kondo, Mahmoud Alfadel, Shane McIntosh, Yasutaka Kamei]
+  venue: IEEE International Conference on Software Maintenance and Evolution
+  venue_short: ICSME 2024
+  year: 2024
+  details: "pp. 300–311"
+  doi: 10.1109/ICSME58944.2024.00036
+
+- type: conference
+  title: "AIP: Scalable and Reproducible Execution Traces in Energy Studies on Mobile Devices"
+  authors: [Olivier Nourry, Yutaro Kashiwa, Bin Lin, Gabriele Bavota, Michele Lanza, Yasutaka Kamei]
+  venue: IEEE International Conference on Software Maintenance and Evolution
+  venue_short: ICSME 2022
+  year: 2022
+  details: "pp. 449–453"
+  doi: 10.1109/ICSME55016.2022.00057
+
+- type: conference
+  title: "Why Do Developers Use Trivial Packages? An Empirical Case Study on npm"
+  authors: [Rabe Abdalkareem, Olivier Nourry, Sultan Wehaibi, Suhaib Mujahid, Emad Shihab]
+  venue: ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering
+  venue_short: ESEC/FSE 2017
+  year: 2017
+  details: "pp. 385–395"
+  doi: 10.1145/3106237.3106267
+
+- type: workshop
+  title: "Forecasting Developer Environments with GenAI: A Research Perspective"
+  authors: [Raula Gaikovina Kula, Christoph Treude, Xing Hu, Sebastian Baltes, Earl T. Barr, Kelly Blincoe, Fabio Calefato, Junjie Chen, Marc Cheong, Youmei Fan, Daniel M. German, Marco Gerosa, Jin L. C. Guo, Shinpei Hayashi, Robert Hirschfeld, Reid Holmes, Yintong Huo, Takashi Kobayashi, Michele Lanza, Zhongxin Liu, Olivier Nourry, Nicole Novielli, Denys Poshyvanyk, Shinobu Saito, Kazumasa Shimari, Igor Steinmacher, Mairieli Wessel, Markus Wagner, Annie Vella, Laurie Williams, Xin Xia]
+  authors_short: "Raula Gaikovina Kula, Christoph Treude, Xing Hu, …, Olivier Nourry, …, Laurie Williams, Xin Xia (31 authors)"
+  venue: International Workshop on Integrated Development Environments (co-located with ICSE 2026)
+  venue_short: IDE@ICSE 2026
+  year: 2026
+  doi: 10.1145/3786151.3788604
+  arxiv: "2602.07412"
+
+- type: preprint
+  title: "Cross-Ecosystem Packages As Multilingual: Prevalence, Architecture, and Health"
+  authors: [Xiangxi Li, Olivier Nourry, Yoshiki Higo, Raula Gaikovina Kula]
+  venue: arXiv preprint
+  venue_short: arXiv
+  year: 2026
+  arxiv: "2609.14983"
+
+- type: domestic
+  title: "Exploring the Magnetic or Sticky Nature of GitHub Ecosystems: NPM, PyPI, and Rubygems"
+  authors: [Shurong Sun, Olivier Nourry, Dong Wang, Yasutaka Kamei]
+  venue: IEICE Technical Report
+  venue_short: IEICE Tech. Rep.
+  year: 2023
+  details: "vol. 123, no. 123, pp. 92–97"

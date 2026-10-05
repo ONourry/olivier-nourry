@@ -1,0 +1,25 @@
+---
+layout: default
+title: Service
+permalink: /service/
+description: Academic service of Olivier Nourry, including program committee memberships.
+---
+{% assign s = site.data.service %}
+<h1>Service</h1>
+
+<h2>Program Committees</h2>
+<dl class="career">
+  {% for r in s.program_committees %}
+  <dt>{{ r.year }}</dt>
+  <dd>{% if r.url %}<a href="{{ r.url }}">{{ r.venue }}</a>{% else %}{{ r.venue }}{% endif %}{% if r.track %} <span class="muted">· {{ r.track }}</span>{% endif %}</dd>
+  {% endfor %}
+</dl>
+
+{% if s.reviewing.size > 0 %}
+<h2>Journal Reviewing</h2>
+<dl class="career">
+  {% for r in s.reviewing %}
+  <dt>{{ r.years }}</dt><dd>{{ r.journal }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}

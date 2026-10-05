@@ -1,0 +1,116 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+description: Publications of Olivier Nourry on fuzzing, automated program repair, LLMs for software engineering and mining software repositories.
+---
+{% assign pubs = site.data.publications %}{% assign lb = "{" %}{% assign rb = "}" %}
+<h1>Publications</h1>
+<p class="lede">Also on <a href="https://scholar.google.com/citations?user=zCS09eQAAAAJ">Google Scholar</a>, <a href="https://dblp.org/pid/39/11368.html">DBLP</a> and <a href="https://researchmap.jp/o-nourry">researchmap</a>.</p>
+
+<div class="pub-filter-wrap">
+  <input id="pub-filter" type="search" placeholder="Filter by title, author, venue or year…" aria-label="Filter publications" autocomplete="off">
+  <span class="pub-count" id="pub-count" aria-live="polite">{{ pubs.size }} items</span>
+</div>
+<div class="pub-chips" role="group" aria-label="Filter by type">
+  <button type="button" class="pub-chip is-on" data-type="">All</button>
+  {% for t in site.data.pubtypes %}{% assign n = pubs | where: "type", t.id | size %}{% if n > 0 %}
+  <button type="button" class="pub-chip chip-{{ t.id }}" data-type="{{ t.id }}">{{ t.label }} <span class="chip-n">{{ n }}</span></button>
+  {% endif %}{% endfor %}
+</div>
+
+{% for t in site.data.pubtypes %}
+{% assign group = pubs | where: "type", t.id %}
+{% if group.size > 0 %}
+<section class="pub-group" data-type="{{ t.id }}">
+  <h2 id="{{ t.id }}">{{ t.heading }} <span class="h-count">{{ group.size }}</span></h2>
+  <ol class="pubs">
+  {% for pub in group %}
+    {% capture authors_html %}{% if pub.authors_short %}{{ pub.authors_short | replace: site.self_name, '<em class="self">Olivier Nourry</em>' }}{% else %}{% for a in pub.authors %}{% if a == site.self_name %}<em class="self">{{ a }}</em>{% else %}{{ a }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}{% endcapture %}
+    {% assign first = pub.authors | first | split: " " | last | downcase | replace: "é", "e" %}
+    {% assign stop = "a,an,the,my,does,do,why,is,on,of,in,for,to,and" | split: "," %}{% assign word = "" %}{% assign tws = pub.title | downcase | remove: ":" | remove: "?" | remove: "," | remove: "'" | replace: "-", " " | split: " " %}{% for w in tws %}{% unless stop contains w %}{% assign word = w %}{% break %}{% endunless %}{% endfor %}
+    {% if pub.key %}{% assign key = pub.key %}{% else %}{% assign key = first | append: pub.year | append: word %}{% endif %}
+    <li class="pub pub-{{ pub.type }}" id="{{ key }}" data-type="{{ pub.type }}">
+      <div class="pub-body">
+        <p class="pub-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">{{ pub.title }}</a>{% elsif pub.arxiv %}<a href="https://arxiv.org/abs/{{ pub.arxiv }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</p>
+        <p class="pub-auth">{{ authors_html | strip }}</p>
+        <p class="pub-venue"><span class="venue-badge">{{ pub.venue_short }}</span> <i>{{ pub.venue }}</i>{% if pub.details %}, {{ pub.details }}{% endif %}, {{ pub.year }}{% if pub.note %} <span class="pub-note">· {{ pub.note }}</span>{% endif %}</p>
+        {% if pub.award %}<p class="pub-award"><span class="pub-trophy" aria-hidden="true"></span>{{ pub.award }}</p>{% endif %}
+      </div>
+      <div class="pub-links">
+        <ul class="pub-icons">
+          {% if pub.doi %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/doi.svg' | relative_url }})" href="https://doi.org/{{ pub.doi }}" title="DOI: {{ pub.doi }}"><span class="sr-only">DOI</span></a></li>{% endif %}
+          {% if pub.arxiv %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/arxiv.svg' | relative_url }})" href="https://arxiv.org/abs/{{ pub.arxiv }}" title="arXiv: {{ pub.arxiv }}"><span class="sr-only">arXiv</span></a></li>{% endif %}
+          {% if pub.pdf %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/pdf.svg' | relative_url }})" href="{% if pub.pdf contains '://' %}{{ pub.pdf }}{% else %}{{ pub.pdf | relative_url }}{% endif %}" title="PDF"><span class="sr-only">PDF</span></a></li>{% endif %}
+          {% if pub.slides %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/slides.svg' | relative_url }})" href="{% if pub.slides contains '://' %}{{ pub.slides }}{% else %}{{ pub.slides | relative_url }}{% endif %}" title="Slides"><span class="sr-only">Slides</span></a></li>{% endif %}
+          {% if pub.code %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/github.svg' | relative_url }})" href="{{ pub.code }}" title="Code / replication package"><span class="sr-only">Code</span></a></li>{% endif %}
+          {% if pub.url %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/link.svg' | relative_url }})" href="{{ pub.url }}" title="Link"><span class="sr-only">Link</span></a></li>{% endif %}
+        </ul>
+        <button type="button" class="pub-link bib-toggle" aria-expanded="false" aria-controls="bib-{{ key }}">BibTeX</button>
+      </div>
+      <div class="bib" id="bib-{{ key }}" hidden>
+        <button type="button" class="copy-bib">Copy</button>
+<pre>{% case pub.type %}{% when "conference" or "workshop" %}@inproceedings{% else %}@article{% endcase %}{{ lb }}{{ key }},
+  title     = {{ lb }}{{ pub.title }}{{ rb }},
+  author    = {{ lb }}{{ pub.authors | join: " and " }}{{ rb }},
+  {% case pub.type %}{% when "conference" or "workshop" %}booktitle = {{ lb }}{{ pub.venue }} ({{ pub.venue_short }}){{ rb }}{% when "preprint" %}journal   = {{ lb }}arXiv preprint arXiv:{{ pub.arxiv }}{{ rb }}{% else %}journal   = {{ lb }}{{ pub.venue }}{{ rb }}{% endcase %},
+  year      = {{ lb }}{{ pub.year }}{{ rb }}{% if pub.doi %},
+  doi       = {{ lb }}{{ pub.doi }}{{ rb }}{% endif %}
+}</pre>
+      </div>
+    </li>
+  {% endfor %}
+  </ol>
+</section>
+{% endif %}
+{% endfor %}
+
+<script>
+(function () {
+  var input = document.getElementById("pub-filter");
+  var count = document.getElementById("pub-count");
+  var chips = document.querySelectorAll(".pub-chip");
+  var items = Array.prototype.slice.call(document.querySelectorAll("li.pub"));
+  var groups = document.querySelectorAll(".pub-group");
+  var type = "";
+  items.forEach(function (li) {
+    li._text = li.querySelector(".pub-body").textContent.toLowerCase().replace(/\s+/g, " ");
+  });
+  function apply() {
+    var terms = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    var shown = 0;
+    items.forEach(function (li) {
+      var ok = (!type || li.dataset.type === type) &&
+        terms.every(function (t) { return li._text.indexOf(t) !== -1; });
+      li.hidden = !ok;
+      if (ok) shown++;
+    });
+    groups.forEach(function (g) {
+      g.hidden = !g.querySelector("li.pub:not([hidden])");
+    });
+    count.textContent = shown + (shown === 1 ? " item" : " items");
+  }
+  input.addEventListener("input", apply);
+  chips.forEach(function (c) {
+    c.addEventListener("click", function () {
+      type = c.dataset.type;
+      chips.forEach(function (x) { x.classList.toggle("is-on", x === c); });
+      apply();
+    });
+  });
+  document.querySelectorAll(".bib-toggle").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var box = document.getElementById(b.getAttribute("aria-controls"));
+      box.hidden = !box.hidden;
+      b.setAttribute("aria-expanded", String(!box.hidden));
+    });
+  });
+  document.querySelectorAll(".copy-bib").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var text = b.parentNode.querySelector("pre").textContent;
+      var done = function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy"; }, 1500); };
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function () {});
+    });
+  });
+})();
+</script>
