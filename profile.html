@@ -2,27 +2,40 @@
 layout: default
 title: Profile
 permalink: /profile/
-description: Career, education, grants and talks of Olivier Nourry.
+description: Career, education, grants, awards and talks of Olivier Nourry.
 ---
 {% assign cv = site.data.cv %}
 <h1>Profile</h1>
 
-<h2>Positions</h2>
+<h2>Academic Positions</h2>
 <dl class="career">
-  {% for x in cv.positions %}<dt>{{ x.period }}</dt><dd>{{ x.role }}, {{ x.org }}</dd>{% endfor %}
+  {% for x in cv.positions %}<dt>{{ x.period }}</dt><dd>{{ x.role }}<br><span class="muted">{{ x.org }}</span></dd>{% endfor %}
 </dl>
 
 <h2>Education</h2>
 <dl class="career">
-  {% for x in cv.education %}<dt>{{ x.period }}</dt><dd>{{ x.degree }}, {{ x.org }}</dd>{% endfor %}
+  {% for x in cv.education %}<dt>{{ x.period }}</dt><dd>{{ x.degree }}, {{ x.org }}{% if x.note %}<br><span class="muted">{{ x.note }}</span>{% endif %}</dd>{% endfor %}
 </dl>
 
-<h2>Research Grants</h2>
+<h2>Industry and Research Experience</h2>
+<dl class="career">
+  {% for x in cv.industry %}<dt>{{ x.period }}</dt><dd>{{ x.role }}, {{ x.org }}{% if x.note %}<br><span class="muted">{{ x.note }}</span>{% endif %}</dd>{% endfor %}
+</dl>
+
+<h2>Research Funding</h2>
 <dl class="career">
   {% for g in cv.grants %}<dt>{{ g.period }}</dt><dd><strong>{{ g.title }}</strong><br><span class="muted">{{ g.funder }} · {{ g.role }}</span></dd>{% endfor %}
+</dl>
+
+<h2>Awards and Distinctions</h2>
+<dl class="career">
+  {% for a in cv.awards %}<dt>{{ a.year }}</dt><dd>{{ a.title }}</dd>{% endfor %}
 </dl>
 
 <h2>Talks</h2>
 <dl class="career">
   {% for t in site.data.talks %}<dt>{{ t.year }}</dt><dd>“{{ t.title }}”<br><span class="muted">{{ t.event }}</span></dd>{% endfor %}
 </dl>
+
+<h2>Languages</h2>
+<p>{{ cv.languages }}</p>

@@ -43,7 +43,7 @@ description: Publications of Olivier Nourry on fuzzing, automated program repair
           {% if pub.arxiv %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/arxiv.svg' | relative_url }})" href="https://arxiv.org/abs/{{ pub.arxiv }}" title="arXiv: {{ pub.arxiv }}"><span class="sr-only">arXiv</span></a></li>{% endif %}
           {% if pub.pdf %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/pdf.svg' | relative_url }})" href="{% if pub.pdf contains '://' %}{{ pub.pdf }}{% else %}{{ pub.pdf | relative_url }}{% endif %}" title="PDF"><span class="sr-only">PDF</span></a></li>{% endif %}
           {% if pub.slides %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/slides.svg' | relative_url }})" href="{% if pub.slides contains '://' %}{{ pub.slides }}{% else %}{{ pub.slides | relative_url }}{% endif %}" title="Slides"><span class="sr-only">Slides</span></a></li>{% endif %}
-          {% if pub.code %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/github.svg' | relative_url }})" href="{{ pub.code }}" title="Code / replication package"><span class="sr-only">Code</span></a></li>{% endif %}
+          {% if pub.code %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/link.svg' | relative_url }})" href="{{ pub.code }}" title="Code / replication package"><span class="sr-only">Code</span></a></li>{% endif %}
           {% if pub.url %}<li><a class="pub-ico" style="--icon: url({{ '/assets/icons/link.svg' | relative_url }})" href="{{ pub.url }}" title="Link"><span class="sr-only">Link</span></a></li>{% endif %}
         </ul>
         <button type="button" class="pub-link bib-toggle" aria-expanded="false" aria-controls="bib-{{ key }}">BibTeX</button>

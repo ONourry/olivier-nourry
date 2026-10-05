@@ -6,16 +6,23 @@ description: Courses taught by Olivier Nourry at The University of Osaka.
 ---
 <h1>Teaching</h1>
 
-<h2>The University of Osaka</h2>
+<h2>The University of Osaka <span class="h-count">2025 – present</span></h2>
+<p class="lede">School of Engineering Science. All courses are taught in Japanese.</p>
 <ul class="courses">
   {% for c in site.data.teaching %}
   <li class="course">
     <div class="course-head">
-      <h3>{{ c.title }} <span class="name-ja" lang="ja">{{ c.title_ja }}</span></h3>
-      <span class="course-when">{{ c.term }} {{ c.since }} – present</span>
+      <h3>{{ c.title }}{% if c.title_ja %} <span class="name-ja" lang="ja">{{ c.title_ja }}</span>{% endif %}</h3>
+      <span class="course-when">{{ c.term }}</span>
     </div>
-    <p class="course-meta">{{ c.level }} · {{ c.institution }}</p>
-    <p>{{ c.description }}</p>
+    <p class="course-meta">{{ c.level }}</p>
+    {% if c.description %}<p>{{ c.description }}</p>{% endif %}
   </li>
   {% endfor %}
+</ul>
+
+<h2>Research Supervision</h2>
+<ul>
+  <li>Day-to-day research supervision of six students at The University of Osaka (three bachelor's, three master's), plus research interns.</li>
+  <li>Co-authored student-led publications: T. Shirai (IEEE TSE 2026, MSR 2026), C. Yoshida (SANER 2026), X. Li (arXiv 2026), S. Sun (IEICE Tech. Rep. 2023).</li>
 </ul>

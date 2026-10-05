@@ -16,6 +16,7 @@
   venue: IEEE Transactions on Software Engineering
   venue_short: TSE
   year: 2026
+  details: "vol. 52, no. 7"
   doi: 10.1109/TSE.2026.3683879
   arxiv: "2510.16433"
 
@@ -35,6 +36,7 @@
   venue: ACM Transactions on Software Engineering and Methodology
   venue_short: TOSEM
   year: 2025
+  details: "vol. 34, no. 2, Article 29"
   note: Presented at FSE 2025 (Journal-First)
   doi: 10.1145/3688842
 
@@ -44,6 +46,7 @@
   venue: ACM Transactions on Software Engineering and Methodology
   venue_short: TOSEM
   year: 2024
+  details: "vol. 33, no. 1, Article 14"
   note: Presented at FSE 2024 (Journal-First)
   doi: 10.1145/3611668
 
@@ -54,6 +57,7 @@
   venue_short: IST
   year: 2021
   details: "vol. 139, 106623"
+  note: Presented at ICSME 2021 (Journal-First)
   doi: 10.1016/j.infsof.2021.106623
 
 - type: conference
@@ -90,6 +94,7 @@
   venue: IEEE International Conference on Software Maintenance and Evolution
   venue_short: ICSME 2022
   year: 2022
+  note: Tool Demo Track
   details: "pp. 449–453"
   doi: 10.1109/ICSME55016.2022.00057
 
@@ -106,7 +111,7 @@
   title: "Forecasting Developer Environments with GenAI: A Research Perspective"
   authors: [Raula Gaikovina Kula, Christoph Treude, Xing Hu, Sebastian Baltes, Earl T. Barr, Kelly Blincoe, Fabio Calefato, Junjie Chen, Marc Cheong, Youmei Fan, Daniel M. German, Marco Gerosa, Jin L. C. Guo, Shinpei Hayashi, Robert Hirschfeld, Reid Holmes, Yintong Huo, Takashi Kobayashi, Michele Lanza, Zhongxin Liu, Olivier Nourry, Nicole Novielli, Denys Poshyvanyk, Shinobu Saito, Kazumasa Shimari, Igor Steinmacher, Mairieli Wessel, Markus Wagner, Annie Vella, Laurie Williams, Xin Xia]
   authors_short: "Raula Gaikovina Kula, Christoph Treude, Xing Hu, …, Olivier Nourry, …, Laurie Williams, Xin Xia (31 authors)"
-  venue: International Workshop on Integrated Development Environments (co-located with ICSE 2026)
+  venue: ACM/IEEE International Workshop on Integrated Development Environments (co-located with ICSE 2026)
   venue_short: IDE@ICSE 2026
   year: 2026
   doi: 10.1145/3786151.3788604
@@ -121,7 +126,7 @@
   arxiv: "2609.14983"
 
 - type: domestic
-  title: "Exploring the Magnetic or Sticky Nature of GitHub Ecosystems: NPM, PyPI, and Rubygems"
+  title: "Exploring the Magnetic or Sticky Nature of GitHub Ecosystems: NPM, PyPI, and RubyGems"
   authors: [Shurong Sun, Olivier Nourry, Dong Wang, Yasutaka Kamei]
   venue: IEICE Technical Report
   venue_short: IEICE Tech. Rep.
