@@ -1,0 +1,6 @@
+# Display order, headings and chip labels for publication types.
+- { id: journal,    heading: Journal Articles,                       label: Journal }
+- { id: conference, heading: International Conferences,              label: Conference }
+- { id: workshop,   heading: Workshops,                              label: Workshop }
+- { id: preprint,   heading: Preprints,                              label: Preprint }
+- { id: domestic,   heading: Domestic Conferences and Technical Reports, label: Domestic }

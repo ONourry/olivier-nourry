@@ -1,0 +1,52 @@
+---
+layout: default
+title: Olivier Nourry
+---
+{% assign p = site.data.profile %}
+<section class="hero">
+  <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="Portrait of {{ p.name }}" width="148" height="148">
+  <div class="hero-body">
+    <h1>{{ p.name }} <span class="name-ja" lang="ja">{{ p.name_ja }}</span></h1>
+    <p class="hero-affil">
+      {{ p.position }}<br>
+      {% for a in p.affiliation_lines %}{% if a.url %}<a href="{{ a.url }}">{{ a.text }}</a>{% else %}{{ a.text }}{% endif %}{% unless forloop.last %}<br>{% endunless %}{% endfor %}
+    </p>
+    <ul class="hero-icons">
+      {% for l in p.links %}
+      <li><a class="i-{{ l.id }}" href="{{ l.url }}" title="{{ l.title }}" style="--icon: url({{ '/assets/icons/' | append: l.id | append: '.svg' | relative_url }})"><span class="sr-only">{{ l.title }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>About</h2>
+  <p>I am an Assistant Professor in the <a href="https://sel.ist.osaka-u.ac.jp/">Software Engineering Laboratory</a> at The University of Osaka. My research aims to make software more reliable by studying how developers test, debug and repair their code in practice, and by building tools that help them do it better.</p>
+  <p>Much of my recent work looks at <strong>fuzzing</strong> from the developer's side: why fuzzers fail to build, how communities adopt fuzz testing, and what a million continuous-fuzzing sessions reveal about its effectiveness. I am increasingly interested in how <strong>large language models</strong> can help developers debug, repair and explain software defects.</p>
+  <p>I received my Ph.D. from Kyushu University in 2024 and my bachelor's degree in Software Engineering from Concordia University (Montréal). Before academia, I worked as a software quality engineer at Apple Japan.</p>
+</section>
+
+<section>
+  <h2>Research Interests</h2>
+  <ul class="tags">
+    {% for i in p.interests %}<li>{{ i }}</li>{% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>News</h2>
+  <ul class="news">
+    {% for n in site.data.news %}
+    <li><span class="news-date">{{ n.date }}</span><span class="news-text">{{ n.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2 id="contact">Contact</h2>
+  <dl class="contact">
+    <dt>Email</dt><dd><a href="mailto:{{ p.email }}">{{ p.email }}</a></dd>
+    <dt>Lab</dt><dd><a href="https://sel.ist.osaka-u.ac.jp/">Software Engineering Laboratory</a>, The University of Osaka</dd>
+  </dl>
+  <div class="callout"><p>Students interested in fuzzing, program repair or LLMs for software engineering are welcome to get in touch by email.</p></div>
+</section>

@@ -1,0 +1,15 @@
+positions:
+  - { period: "2025 – present", role: Assistant Professor, org: "The University of Osaka" }
+  - { period: "2024 – 2025", role: Specially Appointed Assistant Professor, org: "Kyushu University" }
+  - { period: "2021", role: "Software Quality Engineer (R&D)", org: "Apple Japan" }
+
+education:
+  - { period: "2022 – 2024", degree: "Ph.D.", org: "Graduate School of Information Science and Electrical Engineering, Kyushu University" }
+  - { period: "2020 – 2022", degree: "Master's degree", org: "Graduate School of Information Science and Electrical Engineering, Kyushu University" }
+  - { period: "2015 – 2019", degree: "Bachelor of Engineering, Software Engineering", org: "Concordia University, Montréal, Canada" }
+
+grants:
+  - period: "2024 – 2028"
+    title: "Advancing Software Engineering Tasks Based on Building Functional Equivalent Method Datasets"
+    funder: "JSPS KAKENHI Grant-in-Aid for Scientific Research (A), JP24H00692"
+    role: "Co-investigator (PI: Yoshiki Higo)"

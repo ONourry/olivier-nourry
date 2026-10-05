@@ -1,0 +1,9 @@
+# Academic service, newest first.
+program_committees:
+  - { year: 2026, venue: ASE 2026, track: TRUST track, url: "https://conf.researchr.org/home/ase-2026" }
+  - { year: 2025, venue: ICSME 2025, track: Registered Reports track, url: "https://conf.researchr.org/home/icsme-2025" }
+  - { year: 2025, venue: APSEC 2025, track: Tool Demonstrations track, url: "https://conf.researchr.org/home/apsec-2025" }
+
+# Add journal reviewing here, e.g.:
+#  - { journal: Empirical Software Engineering, years: "2025–" }
+reviewing: []

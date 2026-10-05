@@ -1,0 +1,16 @@
+# Presentations, newest first.
+- year: 2025
+  title: "My Fuzzers Won't Build: An Empirical Study of Fuzzing Build Failures"
+  event: "ACM International Conference on the Foundations of Software Engineering (FSE 2025), Journal-First track"
+- year: 2025
+  title: "My Fuzzers Won't Build: An Empirical Study of Fuzzing Build Failures"
+  event: "IPSJ/SIGSE Software Engineering Symposium (SES 2025)"
+- year: 2024
+  title: "The Human Side of Fuzzing: Challenges Faced by Developers during Fuzzing Activities"
+  event: "ACM International Conference on the Foundations of Software Engineering (FSE 2024), Journal-First track"
+- year: 2024
+  title: "Exploring the Adoption of Fuzz Testing in Open-Source Software: A Case Study of the Go Community"
+  event: "IEEE International Conference on Software Maintenance and Evolution (ICSME 2024), Flagstaff, AZ, USA"
+- year: 2024
+  title: "The Human Side of Fuzzing: Challenges Faced by Developers during Fuzzing Activities"
+  event: "IPSJ/SIGSE Software Engineering Symposium (SES 2024)"
