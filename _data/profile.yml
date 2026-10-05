@@ -5,23 +5,22 @@ position: Assistant Professor
 affiliation_lines:
   - text: Software Engineering Laboratory (Higo Lab)
     url: https://sel.ist.osaka-u.ac.jp/
-  - text: Department of Information and Computer Sciences, School of Engineering Science
+  - text: Graduate School of Information Science and Technology
   - text: The University of Osaka
     url: https://www.osaka-u.ac.jp/en
-email: nourry@ist.osaka-u.ac.jp
+# Written with [at]/[dot] on purpose so the address is not harvested by crawlers.
+email: "nourry [at] ist [dot] osaka-u [dot] ac [dot] jp"
 
 links:
-  - { id: email, title: Email, url: "mailto:nourry@ist.osaka-u.ac.jp" }
   - { id: googlescholar, title: Google Scholar, url: "https://scholar.google.com/citations?user=zCS09eQAAAAJ" }
   - { id: dblp, title: DBLP, url: "https://dblp.org/pid/39/11368.html" }
   - { id: orcid, title: ORCID, url: "https://orcid.org/0000-0002-7100-9227" }
   - { id: researchmap, title: researchmap, url: "https://researchmap.jp/o-nourry" }
-  - { id: github, title: GitHub, url: "https://github.com/ONourry" }
   - { id: linkedin, title: LinkedIn, url: "https://www.linkedin.com/in/olivier-nourry-603687113/" }
 
 interests:
-  - Fuzzing and continuous fuzzing in practice
-  - Automated program repair
-  - Large language models for software engineering
-  - Mining software repositories and open-source ecosystems
+  - AI for software engineering (AI4SE)
+  - Software testing and fuzzing
+  - Software security and reliability
   - Empirical software engineering
+  - Mining software repositories and open-source ecosystems

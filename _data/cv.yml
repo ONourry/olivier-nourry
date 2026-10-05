@@ -1,15 +1,46 @@
 positions:
-  - { period: "2025 – present", role: Assistant Professor, org: "The University of Osaka" }
-  - { period: "2024 – 2025", role: Specially Appointed Assistant Professor, org: "Kyushu University" }
-  - { period: "2021", role: "Software Quality Engineer (R&D)", org: "Apple Japan" }
+  - { period: "Apr 2025 – present", role: Assistant Professor, org: "Graduate School of Information Science and Technology, The University of Osaka" }
+  - { period: "Sep 2024 – Mar 2025", role: Specially Appointed Assistant Professor, org: "Kyushu University" }
 
 education:
-  - { period: "2022 – 2024", degree: "Ph.D.", org: "Graduate School of Information Science and Electrical Engineering, Kyushu University" }
-  - { period: "2020 – 2022", degree: "Master's degree", org: "Graduate School of Information Science and Electrical Engineering, Kyushu University" }
-  - { period: "2015 – 2019", degree: "Bachelor of Engineering, Software Engineering", org: "Concordia University, Montréal, Canada" }
+  - period: "Apr 2022 – Sep 2024"
+    degree: "Ph.D., Information Science and Electrical Engineering"
+    org: "Kyushu University"
+    note: "Advisor: Prof. Yasutaka Kamei. Completed in two and a half years (early completion)."
+  - period: "Apr 2020 – Mar 2022"
+    degree: "Master of Information Science"
+    org: "Kyushu University"
+    note: "Advisor: Prof. Yasutaka Kamei. Included a research visit to USI Lugano, Switzerland (Prof. Gabriele Bavota, Prof. Michele Lanza)."
+  - period: "Sep 2015 – Apr 2019"
+    degree: "Bachelor of Engineering, Software Engineering"
+    org: "Concordia University, Montréal, Canada"
+
+industry:
+  - period: "Apr 2021 – Oct 2021"
+    role: "Software Quality Engineer (R&D)"
+    org: "Apple Japan, Kanagawa"
+    note: "Designed and deployed machine-learning pipelines to categorize, cluster and triage Siri bug reports and test failures."
+  - period: "May 2018 – Sep 2018"
+    role: "Cognitive Automation Developer"
+    org: "Société Générale Corporate and Investment Banking, Montréal"
+    note: "Built automation bots, browser automation and OCR tools in Python, from requirements to deployment."
+  - period: "May 2017 – Dec 2017"
+    role: "HPC Junior System Analyst"
+    org: "Shared Services Canada, Montréal"
+    note: "Contributed to the open-source MetPX Sarracenia project; developed daemons collecting real-time meteorological data nationwide."
+  - period: "May 2016 – Jan 2017"
+    role: "Undergraduate Research Assistant"
+    org: "Data-driven Analysis of Software Lab, Concordia University"
+    note: "Supervised by Prof. Emad Shihab as an NSERC USRA recipient; mined GitHub repositories and npm packages and surveyed developers on trivial packages (ESEC/FSE 2017)."
 
 grants:
   - period: "2024 – 2028"
     title: "Advancing Software Engineering Tasks Based on Building Functional Equivalent Method Datasets"
     funder: "JSPS KAKENHI Grant-in-Aid for Scientific Research (A), JP24H00692"
-    role: "Co-investigator (PI: Yoshiki Higo)"
+    role: "Co-investigator (PI: Prof. Yoshiki Higo)"
+
+awards:
+  - { year: 2021, title: "Selected as a Fukuoka Goodwill Ambassador to promote relations between Japan and Canada" }
+  - { year: 2016, title: "NSERC Undergraduate Student Research Award (USRA), Natural Sciences and Engineering Research Council of Canada" }
+
+languages: "French and English (fluent) · Japanese (professional proficiency; teaches university courses in Japanese)"

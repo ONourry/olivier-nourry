@@ -2,7 +2,7 @@
 layout: default
 title: Service
 permalink: /service/
-description: Academic service of Olivier Nourry, including program committee memberships.
+description: Academic service of Olivier Nourry, including program committees and journal reviewing.
 ---
 {% assign s = site.data.service %}
 <h1>Service</h1>
@@ -14,6 +14,15 @@ description: Academic service of Olivier Nourry, including program committee mem
   <dd>{% if r.url %}<a href="{{ r.url }}">{{ r.venue }}</a>{% else %}{{ r.venue }}{% endif %}{% if r.track %} <span class="muted">· {{ r.track }}</span>{% endif %}</dd>
   {% endfor %}
 </dl>
+
+{% if s.review_board.size > 0 %}
+<h2>Journal Review Boards</h2>
+<dl class="career">
+  {% for r in s.review_board %}
+  <dt>{{ r.years }}</dt><dd>{{ r.journal }} <span class="muted">· {{ r.role }}</span></dd>
+  {% endfor %}
+</dl>
+{% endif %}
 
 {% if s.reviewing.size > 0 %}
 <h2>Journal Reviewing</h2>

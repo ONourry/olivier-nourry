@@ -1,15 +1,19 @@
-# Courses, current first.
+# Courses at The University of Osaka, School of Engineering Science (all taught in Japanese).
+# `title_ja` is optional.
 - title: Programming A
   title_ja: プログラミングA
-  level: Undergraduate (1st year)
-  institution: School of Engineering Science, The University of Osaka
-  since: 2026
-  term: Spring
-  description: Introduction to programming for first-year students, taught in C.
-- title: Information Science Seminar D
-  title_ja: 情報科学演習D
   level: Undergraduate
-  institution: School of Engineering Science, The University of Osaka
-  since: 2025
-  term: Fall
-  description: Project-based course in which students implement a compiler for a Pascal-like language from scratch.
+  term: First semester
+  description: Introductory programming course, taught in C.
+- title: Project-Based Learning (PBL)
+  level: Undergraduate
+  term: First semester
+- title: Information Science Exercise D
+  title_ja: 情報科学演習D
+  level: Undergraduate (3rd year)
+  term: Second semester
+  description: Students implement a compiler for Pascal in Java from scratch.
+- title: Seminar B
+  level: Undergraduate (3rd year)
+  term: Second semester
+  description: Introduction to research.
