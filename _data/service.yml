@@ -10,7 +10,8 @@ program_committees:
 review_board:
   - { years: "2026 – present", journal: "ACM Transactions on Software Engineering and Methodology (TOSEM)", role: Review Committee Member }
 
+# Journals I currently review for.
 reviewing:
-  - { years: "2025, 2026", journal: "IEEE Transactions on Software Engineering (TSE)" }
-  - { years: "2025", journal: "ACM Transactions on Software Engineering and Methodology (TOSEM)" }
-  - { years: "2024 – 2025", journal: "Empirical Software Engineering (EMSE)" }
+  - "IEEE Transactions on Software Engineering (TSE)"
+  - "ACM Transactions on Software Engineering and Methodology (TOSEM)"
+  - "Empirical Software Engineering (EMSE)"
