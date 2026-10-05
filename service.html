@@ -26,9 +26,7 @@ description: Academic service of Olivier Nourry, including program committees an
 
 {% if s.reviewing.size > 0 %}
 <h2>Journal Reviewing</h2>
-<dl class="career">
-  {% for r in s.reviewing %}
-  <dt>{{ r.years }}</dt><dd>{{ r.journal }}</dd>
-  {% endfor %}
-</dl>
+<ul>
+  {% for j in s.reviewing %}<li>{{ j }}</li>{% endfor %}
+</ul>
 {% endif %}
