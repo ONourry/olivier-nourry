@@ -32,7 +32,7 @@ description: Career, education, grants, awards and talks of Olivier Nourry.
   {% for a in cv.awards %}<dt>{{ a.year }}</dt><dd>{{ a.title }}</dd>{% endfor %}
 </dl>
 
-<h2>Talks</h2>
+<h2 id="talks">Talks</h2>
 <dl class="career">
   {% for t in site.data.talks %}<dt>{{ t.year }}</dt><dd>“{{ t.title }}”<br><span class="muted">{{ t.event }}</span></dd>{% endfor %}
 </dl>

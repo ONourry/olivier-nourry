@@ -6,8 +6,17 @@
   title: "My Fuzzers Won't Build: An Empirical Study of Fuzzing Build Failures"
   event: "IPSJ/SIGSE Software Engineering Symposium (SES 2025)"
 - year: 2024
+  title: "Exploring the Adoption of Fuzz Testing in Open-Source Software: A Case Study of the Go Community"
+  event: "IEEE International Conference on Software Maintenance and Evolution (ICSME 2024), Research Track, Flagstaff, Arizona, USA"
+- year: 2024
   title: "The Human Side of Fuzzing: Challenges Faced by Developers during Fuzzing Activities"
   event: "ACM International Conference on the Foundations of Software Engineering (FSE 2024), Journal-First Track, Porto de Galinhas, Brazil"
 - year: 2024
   title: "The Human Side of Fuzzing: Challenges Faced by Developers during Fuzzing Activities"
   event: "IPSJ/SIGSE Software Engineering Symposium (SES 2024)"
+- year: 2022
+  title: "AIP: Scalable and Reproducible Execution Traces in Energy Studies on Mobile Devices"
+  event: "IEEE International Conference on Software Maintenance and Evolution (ICSME 2022), Tool Demo Track, Limassol, Cyprus"
+- year: 2021
+  title: "Does Shortening the Release Cycle Affect Refactoring Activities: A Case Study of the JDT Core, Platform SWT, and UI Projects"
+  event: "IEEE International Conference on Software Maintenance and Evolution (ICSME 2021), Journal-First Track"

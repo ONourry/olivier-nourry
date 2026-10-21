@@ -1,6 +1,7 @@
 # Academic service, newest first.
 program_committees:
   - { year: 2027, venue: ISSRE 2027, track: Main Track }
+  - { year: 2027, venue: MSR 2027, track: Registered Reports }
   - { year: 2026, venue: ISSRE 2026, track: Fast Abstracts and Project Highlights }
   - { year: 2026, venue: ASE 2026, track: TRUST track }
   - { year: 2025, venue: ICSME 2025, track: Registered Reports }
