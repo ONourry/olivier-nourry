@@ -1,23 +1,23 @@
 positions:
   - { period: "Apr 2025 – present", role: Assistant Professor, org: "Graduate School of Information Science and Technology, The University of Osaka" }
-  - { period: "Sep 2024 – Mar 2025", role: Specially Appointed Assistant Professor, org: "Kyushu University" }
+  - { period: "Oct 2024 – Mar 2025", role: Specially Appointed Assistant Professor, org: "Kyushu University" }
 
 education:
   - period: "Apr 2022 – Sep 2024"
-    degree: "Ph.D., Information Science and Electrical Engineering"
+    degree: "Ph.D. (Doctor of Engineering), Information Science and Technology"
     org: "Kyushu University"
     note: "Advisor: Prof. Yasutaka Kamei. Completed in two and a half years (early completion)."
   - period: "Apr 2020 – Mar 2022"
-    degree: "Master of Information Science"
+    degree: "Master of Engineering, Advanced Information Technology"
     org: "Kyushu University"
     note: "Advisor: Prof. Yasutaka Kamei. Included a research visit to USI Lugano, Switzerland (Prof. Gabriele Bavota, Prof. Michele Lanza)."
-  - period: "Sep 2015 – Apr 2019"
+  - period: "Sep 2015 – May 2019"
     degree: "Bachelor of Engineering, Software Engineering"
     org: "Concordia University, Montréal, Canada"
 
 industry:
   - period: "Apr 2021 – Oct 2021"
-    role: "Software Quality Engineer (R&D)"
+    role: "Software Quality Engineer (R&D), internship"
     org: "Apple Japan, Kanagawa"
     note: "Designed and deployed machine-learning pipelines to categorize, cluster and triage Siri bug reports and test failures."
   - period: "May 2018 – Sep 2018"
@@ -27,20 +27,19 @@ industry:
   - period: "May 2017 – Dec 2017"
     role: "HPC Junior System Analyst"
     org: "Shared Services Canada, Montréal"
-    note: "Contributed to the open-source MetPX Sarracenia project; developed daemons collecting real-time meteorological data nationwide."
+    note: "Contributed to the open-source MetPX Sarracenia project; developed data crawling daemons to collect real-time meteorological data nationwide."
   - period: "May 2016 – Jan 2017"
     role: "Undergraduate Research Assistant"
     org: "Data-driven Analysis of Software Lab, Concordia University"
     note: "Supervised by Prof. Emad Shihab as an NSERC USRA recipient; mined GitHub repositories and npm packages and surveyed developers on trivial packages (ESEC/FSE 2017)."
 
 grants:
-  - period: "2024 – 2028"
+  - period: "2025 – 2028"
     title: "Advancing Software Engineering Tasks Based on Building Functional Equivalent Method Datasets"
     funder: "JSPS KAKENHI Grant-in-Aid for Scientific Research (A), JP24H00692"
-    role: "Co-investigator (PI: Prof. Yoshiki Higo)"
+    role: "Co-investigator since 2025 (project period 2024–2028; PI: Prof. Yoshiki Higo)"
 
 awards:
-  - { year: 2021, title: "Selected as a Fukuoka Goodwill Ambassador to promote relations between Japan and Canada" }
   - { year: 2016, title: "NSERC Undergraduate Student Research Award (USRA), Natural Sciences and Engineering Research Council of Canada" }
 
-languages: "French and English (fluent) · Japanese (professional proficiency; teaches university courses in Japanese)"
+languages: "English (native/fluent) · French (native/fluent) · Japanese (professional proficiency; teaches university courses in Japanese)"

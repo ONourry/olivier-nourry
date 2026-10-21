@@ -21,12 +21,13 @@
   arxiv: "2510.16433"
 
 - type: journal
-  title: "Abandonment and Resilience: Understanding Core Developer Turnover in Open Source Software"
+  title: "Abandonment and Resilience: Understanding Core Developer Turnover in Open-Source Software"
   authors: [Olivier Nourry, Masanari Kondo, Shinobu Saito, Yukako Iimura, Naoyasu Ubayashi, Yasutaka Kamei]
   venue: IEICE Transactions on Information and Systems
   venue_short: IEICE Trans. Inf. & Syst.
   year: 2025
-  details: "vol. E108-D, no. 11"
+  details: "vol. E108-D, no. 11, pp. 1412–1415"
+  note: Letter
   doi: 10.1587/transinf.2025EDL8005
   arxiv: "2412.00313"
 
@@ -75,7 +76,8 @@
   venue: IEEE International Conference on Software Analysis, Evolution and Reengineering
   venue_short: SANER 2026
   year: 2026
-  note: ERA track
+  details: "pp. 92–97"
+  note: Early Research Achievement (ERA) Track
   doi: 10.1109/SANER67736.2026.00019
   arxiv: "2601.12273"
 
@@ -118,11 +120,39 @@
   arxiv: "2602.07412"
 
 - type: preprint
+  title: "RELAY: Scaling Historical Build Restoration through Rule Reuse and Agentic Repair"
+  authors: [Olivier Nourry, Yoshiki Higo]
+  venue: arXiv preprint
+  venue_short: arXiv
+  year: 2026
+  note: Submitted to ACM TOSEM
+  arxiv: "2610.27784"
+
+- type: preprint
+  title: "Raise or Check? Predicting the Necessity of Additional Fuzzing for Continuous Fuzzing"
+  authors: [Riku Kato, Tatsuya Shirai, Olivier Nourry, Yutaro Kashiwa, Kenji Fujiwara, Yasutaka Kamei, Hajimu Iida]
+  venue: arXiv preprint
+  venue_short: arXiv
+  year: 2026
+  note: Submitted to ACM TOSEM
+  arxiv: "2610.27828"
+
+- type: preprint
+  title: "Rethinking SZZ Search Strategies: Lessons from Claude Code"
+  authors: [Inase Kondo, Masanari Kondo, Daniel M. German, Olivier Nourry, Yasutaka Kamei, Yoshiki Higo]
+  venue: arXiv preprint
+  venue_short: arXiv
+  year: 2026
+  note: Submitted to IEEE TSE
+  arxiv: "2610.14462"
+
+- type: preprint
   title: "Cross-Ecosystem Packages As Multilingual: Prevalence, Architecture, and Health"
   authors: [Xiangxi Li, Olivier Nourry, Yoshiki Higo, Raula Gaikovina Kula]
   venue: arXiv preprint
   venue_short: arXiv
   year: 2026
+  note: Submitted to Empirical Software Engineering
   arxiv: "2609.14983"
 
 - type: domestic
@@ -131,4 +161,4 @@
   venue: IEICE Technical Report
   venue_short: IEICE Tech. Rep.
   year: 2023
-  details: "vol. 123, no. 123, pp. 92–97"
+  details: "vol. 123, no. 123, SS2023-17, pp. 92–97"

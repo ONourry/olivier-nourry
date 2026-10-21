@@ -1,4 +1,13 @@
-# Newest first. `text` accepts Markdown. Keep this list short (5–6 items).
+# Add new items at the TOP of this list (newest first). `text` accepts Markdown.
+# The home page shows the first 8 (news_limit in _config.yml); the rest go under "Older news".
+- date: 2026-10
+  text: "New preprint: [RELAY: Scaling Historical Build Restoration through Rule Reuse and Agentic Repair](https://arxiv.org/abs/2610.27784)."
+- date: 2026-10
+  text: "New preprint: [Raise or Check? Predicting the Necessity of Additional Fuzzing for Continuous Fuzzing](https://arxiv.org/abs/2610.27828)."
+- date: 2026-10
+  text: "New preprint: [Rethinking SZZ Search Strategies: Lessons from Claude Code](https://arxiv.org/abs/2610.14462)."
+- date: 2026
+  text: "Serving on the MSR 2027 program committee (Registered Reports)."
 - date: 2026-09
   text: "New preprint: [Cross-Ecosystem Packages As Multilingual: Prevalence, Architecture, and Health](https://arxiv.org/abs/2609.14983)."
 - date: 2026-07
