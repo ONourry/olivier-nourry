@@ -110,6 +110,24 @@
   doi: 10.1145/3106237.3106267
 
 - type: workshop
+  title: "A Dual-Perspective Study of Mobile App Abandonment: User Engagement and Development Evolution"
+  authors: [Kazuya Matsushita, Olivier Nourry, Gakushi Kimura, Yoshiki Higo]
+  venue: International Workshop on Quantitative Approaches to Software Quality (co-located with APSEC 2026)
+  venue_short: QuASoQ 2026
+  year: 2026
+  note: To appear
+  url: http://quasoq2026.swc-rwth.de/program.html
+
+- type: workshop
+  title: "Beyond Receiving Funding: How Financial Allocation Relates to Development and Maintenance in Open Source Projects"
+  authors: [Gakushi Kimura, Olivier Nourry, Yoshiki Higo]
+  venue: International Workshop on Quantitative Approaches to Software Quality (co-located with APSEC 2026)
+  venue_short: QuASoQ 2026
+  year: 2026
+  note: To appear
+  url: http://quasoq2026.swc-rwth.de/program.html
+
+- type: workshop
   title: "Forecasting Developer Environments with GenAI: A Research Perspective"
   authors: [Raula Gaikovina Kula, Christoph Treude, Xing Hu, Sebastian Baltes, Earl T. Barr, Kelly Blincoe, Fabio Calefato, Junjie Chen, Marc Cheong, Youmei Fan, Daniel M. German, Marco Gerosa, Jin L. C. Guo, Shinpei Hayashi, Robert Hirschfeld, Reid Holmes, Yintong Huo, Takashi Kobayashi, Michele Lanza, Zhongxin Liu, Olivier Nourry, Nicole Novielli, Denys Poshyvanyk, Shinobu Saito, Kazumasa Shimari, Igor Steinmacher, Mairieli Wessel, Markus Wagner, Annie Vella, Laurie Williams, Xin Xia]
   authors_short: "Raula Gaikovina Kula, Christoph Treude, Xing Hu, …, Olivier Nourry, …, Laurie Williams, Xin Xia (31 authors)"
