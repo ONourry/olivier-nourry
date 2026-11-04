@@ -1,7 +1,7 @@
 # Add new items at the TOP of this list (newest first). `text` accepts Markdown.
 # The home page shows the first 8 (news_limit in _config.yml); the rest go under "Older news".
 - date: 2026-11
-  text: "Two papers by students in our lab were accepted at [QuASoQ 2026](http://quasoq2026.swc-rwth.de/), the 13th International Workshop on Quantitative Approaches to Software Quality (co-located with APSEC 2026)."
+  text: "Two papers by students in our lab were accepted at [QuASoQ 2026](http://quasoq2026.swc-rwth.de/) (co-located with APSEC 2026): *A Dual-Perspective Study of Mobile App Abandonment: User Engagement and Development Evolution* and *Beyond Receiving Funding: How Financial Allocation Relates to Development and Maintenance in Open Source Projects*."
 - date: 2026-10
   text: "New preprint: [RELAY: Scaling Historical Build Restoration through Rule Reuse and Agentic Repair](https://arxiv.org/abs/2610.27784)."
 - date: 2026-10
